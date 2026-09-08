@@ -2,21 +2,22 @@ name: Volatility Expansion Bot - Automated Run
 
 on:
   schedule:
-    # 1. Indian Market Close: 10:15 UTC = 15:45 IST (Mon-Fri)
-    - cron: '15 10 * * 1-5'
-    # 2. US Market Close: 21:00 UTC = 17:00 EDT (Mon-Fri)
-    - cron: '0 21 * * 1-5'
+    # 1. Indian Market Close: 10:20 UTC = 15:50 IST (Mon-Fri)
+    - cron: '20 10 * * 1-5'
+    # 2. US Market Close: 21:15 UTC = 17:15 EDT (Mon-Fri)
+    - cron: '15 21 * * 1-5'
   workflow_dispatch:
     inputs:
       market:
         description: 'Select Market Universe'
         required: true
-        default: 'US'
+        default: 'BOTH'
         type: choice
         options:
-          - US
-          - INDIA
           - BOTH
+          - INDIA
+          - US
+
 
 permissions:
   contents: write

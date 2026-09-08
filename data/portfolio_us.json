@@ -1,8 +1,21 @@
 {
-  "capital": 9828.720000000001,
+  "capital": 8256.300000000001,
   "initial_capital": 10000.0,
-  "invested": 0.0,
-  "positions": {},
+  "invested": 1572.42,
+  "positions": {
+    "DELL": {
+      "ticker": "DELL",
+      "entry_date": "2026-09-08",
+      "entry_price": 524.14,
+      "qty": 3,
+      "invested": 1572.42,
+      "current_sl": 500.55,
+      "highest_high": 524.14,
+      "days_held": 0,
+      "last_price": 524.14,
+      "unrealized_pnl_pct": 0.0
+    }
+  },
   "closed_trades": [
     {
       "ticker": "TSLA",
@@ -72,6 +85,19 @@
       "Qty": 5,
       "Status": "FILLED",
       "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-08 08:01:03",
+      "Order_ID": "416DFEC953",
+      "Ticker": "DELL",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 524.14,
+      "Fill_Price": 524.14,
+      "Slippage": 0.0,
+      "Qty": 3,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
     }
   ],
   "discrepancies": [
@@ -83,5 +109,5 @@
       "Details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-08 04:53:12"
+  "last_updated": "2026-09-08 08:02:20"
 }

@@ -119,7 +119,7 @@ def run_cycle():
     send_message(summary_text)
 
     if os.path.exists(EXCEL_FILE):
-        send_document(EXCEL_FILE, caption=f"Audit Workbook ({today_str}) - 7 Tabs")
+        send_document(EXCEL_FILE, caption=f"Audit Workbook ({today_str}) - {MARKET_MODE} - 7 Tabs")
 
     duration = round(time.time() - start_time, 2)
     print(f"[RUN FINISHED] Completed in {duration}s. Audit log saved to {EXCEL_FILE}.\n{'='*70}")

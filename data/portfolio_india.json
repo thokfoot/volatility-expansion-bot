@@ -1,8 +1,21 @@
 {
-  "capital": 198821.93,
+  "capital": 179135.97999999998,
   "initial_capital": 200000.0,
-  "invested": 0.0,
-  "positions": {},
+  "invested": 19685.95,
+  "positions": {
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "entry_date": "2026-09-08",
+      "entry_price": 418.85,
+      "qty": 47,
+      "invested": 19685.95,
+      "current_sl": 400.0,
+      "highest_high": 418.85,
+      "days_held": 0,
+      "last_price": 418.85,
+      "unrealized_pnl_pct": 0.0
+    }
+  },
   "closed_trades": [
     {
       "ticker": "HSCL",
@@ -2361,6 +2374,19 @@
       "qty": 5,
       "status": "FILLED",
       "note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-08 08:01:33",
+      "Order_ID": "1D6A6BEDFA",
+      "Ticker": "COALINDIA",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 418.85,
+      "Fill_Price": 418.85,
+      "Slippage": 0.0,
+      "Qty": 47,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
     }
   ],
   "discrepancies": [
@@ -2372,5 +2398,5 @@
       "details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-07 21:19:22"
+  "last_updated": "2026-09-08 08:02:33"
 }

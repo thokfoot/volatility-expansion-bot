@@ -18,15 +18,45 @@ VOLUME_MULT = 1.3              # Min volume spike vs 20-day Volume MA
 HARD_STOP_LOSS_PCT = 4.5       # Strict 4.5% disaster stop loss
 
 # ── Universes ──
-US_UNIVERSE = [
-    "NVDA", "TSLA", "AAPL", "MSFT", "META", "AMZN", "GOOGL",
-    "AMD", "NFLX", "PLTR", "AVGO", "COIN", "ARM", "UBER", "SMCI", "QCOM"
+from us_tickers import US_TICKERS
+
+# Top 100 liquid US tech and high-beta growth leaders
+US_UNIVERSE = US_TICKERS[:100]
+
+# Top 100 liquid Indian Nifty momentum leaders
+FALLBACK_INDIA_UNIVERSE = [
+    "RELIANCE", "TCS", "HDFCBANK", "ICICIBANK", "BHARTIARTL", "SBIN", "INFY", "ITC",
+    "LT", "HINDUNILVR", "TATAMOTORS", "BAJFINANCE", "M&M", "SUNPHARMA", "MARUTI",
+    "KOTAKBANK", "NTPC", "AXISBANK", "POWERGRID", "TITAN", "ONGC", "ADANIENT",
+    "TATASTEEL", "COALINDIA", "BAJAJFINSV", "ASIANPAINT", "HCLTECH", "JSWSTEEL",
+    "ADANIPORTS", "ULTRACEMCO", "BEL", "HAL", "TRENT", "ZOMATO", "SIEMENS",
+    "DLF", "VBL", "CHOLAFIN", "VEDL", "INDUSINDBK", "HINDALCO", "GRASIM",
+    "CIPLA", "TECHM", "EICHERMOT", "NESTLEIND", "DRREDDY", "WIPRO", "BPCL",
+    "DIVISLAB", "TATACONSUM", "BRITANNIA", "BAJAJ-AUTO", "APOLLOHOSP", "SHRIRAMFIN",
+    "HDFCLIFE", "SBILIFE", "PERSISTENT", "DIXON", "POLYCAB", "MCX", "CUMMINSIND",
+    "ASHOKLEY", "MOTHERSON", "TVSMOTOR", "IRCTC", "IRFC", "MAZDOCK", "COCHINSHIP",
+    "RVNL", "BDL", "BHEL", "LTIM", "OBEROIRLTY", "MAXHEALTH", "LODHA", "GODREJPROP",
+    "SUZLON", "IDEA", "YESBANK", "FEDERALBNK", "IDFCFIRSTB", "AUBANK", "PNB",
+    "BANKBARODA", "CANBK", "UNIONBANK", "SAIL", "NMDC", "NATIONALUM", "JINDALSTEL",
+    "GMRINFRA", "PRESTIGE", "PHOENIXLTD", "ABCAPITAL", "MUTHOOTFIN", "PFC", "RECLTD"
 ]
 
-INDIA_UNIVERSE = [
-    "TRENT", "BEL", "HAL", "PERSISTENT", "DIXON", "BHARTIARTL",
-    "MCX", "CHOLAFIN", "HDFCBANK", "ICICIBANK", "POLYCAB", "VBL", "RELIANCE"
-]
+def get_india_universe():
+    try:
+        import io, requests, pandas as pd
+        url = "https://archives.nseindia.com/content/indices/ind_nifty100list.csv"
+        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=6)
+        if r.status_code == 200:
+            df = pd.read_csv(io.StringIO(r.text))
+            syms = [s.strip() for s in df["Symbol"].dropna() if s.strip()]
+            if len(syms) >= 50:
+                return syms
+    except Exception:
+        pass
+    return FALLBACK_INDIA_UNIVERSE
+
+INDIA_UNIVERSE = get_india_universe()
+
 
 # ── Capital & Portfolio Risk Management ──
 if MARKET_MODE == "US":
@@ -44,7 +74,8 @@ else:
 
 # ── Execution Settings ──
 DATA_PERIOD = "1y"
-MAX_WORKERS = 8
+MAX_WORKERS = 16
+
 
 # ── File Paths & State Tracking ──
 DATA_DIR = "data"

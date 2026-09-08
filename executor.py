@@ -10,6 +10,8 @@ from portfolio import (
     can_take_trade, open_position, close_position,
     add_discrepancy, add_order
 )
+from config import HARD_STOP_LOSS_PCT
+
 
 IST = pytz.timezone("Asia/Kolkata")
 
@@ -17,9 +19,11 @@ IST = pytz.timezone("Asia/Kolkata")
 def manage_active_holdings(portfolio: dict, market_data_map: dict, today_str: str) -> list:
     """
     Evaluates every currently open holding against today's bar:
-    1. Check Hard Stop Loss: Low <= current_sl
-    2. Check Trend Reversal: EMA9 < EMA21
-    3. Update Unrealized P&L and Days Held
+    1. Skip if position was entered today (cannot evaluate against entry day's past low)
+    2. Ratchet Trailing Stop: lock profits 4.5% below highest high
+    3. Check Stop Loss / Trailing Stop: Low <= current_sl
+    4. Check Trend Reversal: EMA9 < EMA21
+    5. Update Unrealized P&L and Days Held
     Returns: list of closed trade dictionaries
     """
     closed_this_run = []
@@ -33,6 +37,13 @@ def manage_active_holdings(portfolio: dict, market_data_map: dict, today_str: st
         df = market_data_map.get(ticker)
         if df is None or len(df) == 0:
             add_discrepancy(portfolio, "DATA_MISSING", ticker, f"No bar data available for today {today_str}")
+            continue
+
+        bar_date = df.index[-1].strftime("%Y-%m-%d")
+
+        # ── CRITICAL SAFEGUARD: Do not evaluate exit on the entry day's bar ──
+        # Entry happens at Close of entry_date; Day T's low happened before entry!
+        if pos.get("entry_date") == bar_date or pos.get("entry_date") == today_str:
             continue
 
         latest_bar = df.iloc[-1]
@@ -49,9 +60,15 @@ def manage_active_holdings(portfolio: dict, market_data_map: dict, today_str: st
         pos["unrealized_pnl_pct"] = round((cl - pos["entry_price"]) / pos["entry_price"] * 100.0, 2)
 
         entry = pos["entry_price"]
+
+        # ── TRAILING STOP RATCHET: Lock in profits at 4.5% below highest high ──
+        ratchet_sl = round(pos["highest_high"] * (1.0 - HARD_STOP_LOSS_PCT / 100.0), 2)
+        if ratchet_sl > pos["current_sl"]:
+            pos["current_sl"] = ratchet_sl
+
         sl = pos["current_sl"]
 
-        # ── EXIT CONDITION 1: Hard Disaster Stop Loss ──
+        # ── EXIT CONDITION 1: Hard Stop Loss or Trailing Stop Hit ──
         if lo <= sl:
             actual_exit = sl
             # Check for gap-down opening below SL
@@ -61,8 +78,9 @@ def manage_active_holdings(portfolio: dict, market_data_map: dict, today_str: st
                 add_discrepancy(portfolio, "GAP_DOWN_SLIP", ticker,
                                 f"Opened at {op:.2f} below SL of {sl:.2f}. Filled at Open.")
 
+            exit_reason = "TRAILING_STOP" if sl > entry else "HARD_STOP_LOSS"
             trade = close_position(portfolio, ticker, exit_price=actual_exit,
-                                   exit_date=today_str, exit_reason="HARD_STOP_LOSS")
+                                   exit_date=today_str, exit_reason=exit_reason)
             if trade:
                 closed_this_run.append(trade)
             continue
@@ -76,6 +94,7 @@ def manage_active_holdings(portfolio: dict, market_data_map: dict, today_str: st
             continue
 
     return closed_this_run
+
 
 
 def execute_new_signals(portfolio: dict, qualified_signals: list, today_str: str) -> list:
