@@ -1,7 +1,7 @@
 {
-  "capital": 8256.300000000001,
+  "capital": 2413.7400000000016,
   "initial_capital": 10000.0,
-  "invested": 1572.42,
+  "invested": 7414.98,
   "positions": {
     "DELL": {
       "ticker": "DELL",
@@ -13,6 +13,42 @@
       "highest_high": 524.14,
       "days_held": 0,
       "last_price": 524.14,
+      "unrealized_pnl_pct": 0.0
+    },
+    "QCOM": {
+      "ticker": "QCOM",
+      "entry_date": "2026-09-09",
+      "entry_price": 174.09,
+      "qty": 11,
+      "invested": 1914.99,
+      "current_sl": 166.26,
+      "highest_high": 174.09,
+      "days_held": 0,
+      "last_price": 174.09,
+      "unrealized_pnl_pct": 0.0
+    },
+    "ORCL": {
+      "ticker": "ORCL",
+      "entry_date": "2026-09-09",
+      "entry_price": 162.52,
+      "qty": 12,
+      "invested": 1950.24,
+      "current_sl": 155.21,
+      "highest_high": 162.52,
+      "days_held": 0,
+      "last_price": 162.52,
+      "unrealized_pnl_pct": 0.0
+    },
+    "QRVO": {
+      "ticker": "QRVO",
+      "entry_date": "2026-09-09",
+      "entry_price": 104.07,
+      "qty": 19,
+      "invested": 1977.33,
+      "current_sl": 99.39,
+      "highest_high": 104.07,
+      "days_held": 0,
+      "last_price": 104.07,
       "unrealized_pnl_pct": 0.0
     }
   },
@@ -98,6 +134,45 @@
       "Qty": 3,
       "Status": "FILLED",
       "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-09 04:53:26",
+      "Order_ID": "83C0264FA2",
+      "Ticker": "QCOM",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 174.09,
+      "Fill_Price": 174.09,
+      "Slippage": 0.0,
+      "Qty": 11,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-09 04:53:26",
+      "Order_ID": "14C96CCE2E",
+      "Ticker": "ORCL",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 162.52,
+      "Fill_Price": 162.52,
+      "Slippage": 0.0,
+      "Qty": 12,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-09 04:53:26",
+      "Order_ID": "BCEF2D0EB1",
+      "Ticker": "QRVO",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 104.07,
+      "Fill_Price": 104.07,
+      "Slippage": 0.0,
+      "Qty": 19,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
     }
   ],
   "discrepancies": [
@@ -109,5 +184,5 @@
       "Details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-08 08:03:44"
+  "last_updated": "2026-09-09 04:53:28"
 }
