@@ -1,20 +1,8 @@
 {
-  "capital": 2413.7400000000016,
+  "capital": 2064.8600000000015,
   "initial_capital": 10000.0,
-  "invested": 7414.98,
+  "invested": 7803.63,
   "positions": {
-    "DELL": {
-      "ticker": "DELL",
-      "entry_date": "2026-09-08",
-      "entry_price": 524.14,
-      "qty": 3,
-      "invested": 1572.42,
-      "current_sl": 500.55,
-      "highest_high": 524.14,
-      "days_held": 0,
-      "last_price": 524.14,
-      "unrealized_pnl_pct": 0.0
-    },
     "QCOM": {
       "ticker": "QCOM",
       "entry_date": "2026-09-09",
@@ -50,6 +38,18 @@
       "days_held": 0,
       "last_price": 104.07,
       "unrealized_pnl_pct": 0.0
+    },
+    "META": {
+      "ticker": "META",
+      "entry_date": "2026-09-10",
+      "entry_price": 653.69,
+      "qty": 3,
+      "invested": 1961.07,
+      "current_sl": 624.27,
+      "highest_high": 653.69,
+      "days_held": 0,
+      "last_price": 653.69,
+      "unrealized_pnl_pct": 0.0
     }
   },
   "closed_trades": [
@@ -80,6 +80,20 @@
       "net_pnl_pct": -4.551,
       "exit_reason": "HARD_STOP_LOSS",
       "days_held": 2
+    },
+    {
+      "ticker": "DELL",
+      "entry_date": "2026-09-08",
+      "exit_date": "2026-09-10",
+      "entry_price": 524.14,
+      "exit_price": 537.66,
+      "qty": 3,
+      "invested": 1572.42,
+      "pnl_amount": 39.77,
+      "gross_pnl_pct": 2.579,
+      "net_pnl_pct": 2.529,
+      "exit_reason": "TRAILING_STOP",
+      "days_held": 1
     }
   ],
   "orders": [
@@ -173,6 +187,32 @@
       "Qty": 19,
       "Status": "FILLED",
       "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-10 04:43:35",
+      "Order_ID": "27F84F6838",
+      "Ticker": "DELL",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 537.66,
+      "Fill_Price": 537.66,
+      "Slippage": 0.0,
+      "Qty": 3,
+      "Status": "FILLED",
+      "Note": "TRAILING_STOP"
+    },
+    {
+      "Timestamp": "2026-09-10 04:43:35",
+      "Order_ID": "193A12ACFF",
+      "Ticker": "META",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 653.69,
+      "Fill_Price": 653.69,
+      "Slippage": 0.0,
+      "Qty": 3,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
     }
   ],
   "discrepancies": [
@@ -184,5 +224,5 @@
       "Details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-09 04:53:28"
+  "last_updated": "2026-09-10 04:43:36"
 }
