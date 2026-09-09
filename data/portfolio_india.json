@@ -1,7 +1,7 @@
 {
-  "capital": 179135.97999999998,
+  "capital": 120159.32999999997,
   "initial_capital": 200000.0,
-  "invested": 19685.95,
+  "invested": 78662.59999999999,
   "positions": {
     "COALINDIA": {
       "ticker": "COALINDIA",
@@ -9,10 +9,46 @@
       "entry_price": 418.85,
       "qty": 47,
       "invested": 19685.95,
-      "current_sl": 400.0,
-      "highest_high": 418.85,
+      "current_sl": 415.76,
+      "highest_high": 435.3500061035156,
+      "days_held": 1,
+      "last_price": 431.0,
+      "unrealized_pnl_pct": 2.9
+    },
+    "ADANIPORTS": {
+      "ticker": "ADANIPORTS",
+      "entry_date": "2026-09-09",
+      "entry_price": 1775.0,
+      "qty": 11,
+      "invested": 19525.0,
+      "current_sl": 1695.12,
+      "highest_high": 1775.0,
       "days_held": 0,
-      "last_price": 418.85,
+      "last_price": 1775.0,
+      "unrealized_pnl_pct": 0.0
+    },
+    "ADANIPOWER": {
+      "ticker": "ADANIPOWER",
+      "entry_date": "2026-09-09",
+      "entry_price": 214.9,
+      "qty": 93,
+      "invested": 19985.7,
+      "current_sl": 205.23,
+      "highest_high": 214.9,
+      "days_held": 0,
+      "last_price": 214.9,
+      "unrealized_pnl_pct": 0.0
+    },
+    "CGPOWER": {
+      "ticker": "CGPOWER",
+      "entry_date": "2026-09-09",
+      "entry_price": 926.95,
+      "qty": 21,
+      "invested": 19465.95,
+      "current_sl": 885.24,
+      "highest_high": 926.95,
+      "days_held": 0,
+      "last_price": 926.95,
       "unrealized_pnl_pct": 0.0
     }
   },
@@ -2387,6 +2423,45 @@
       "Qty": 47,
       "Status": "FILLED",
       "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-09 20:07:43",
+      "Order_ID": "D21271DAB0",
+      "Ticker": "ADANIPORTS",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 1775.0,
+      "Fill_Price": 1775.0,
+      "Slippage": 0.0,
+      "Qty": 11,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-09 20:07:43",
+      "Order_ID": "382E550052",
+      "Ticker": "ADANIPOWER",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 214.9,
+      "Fill_Price": 214.9,
+      "Slippage": 0.0,
+      "Qty": 93,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-09 20:07:43",
+      "Order_ID": "B855BA8DDE",
+      "Ticker": "CGPOWER",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 926.95,
+      "Fill_Price": 926.95,
+      "Slippage": 0.0,
+      "Qty": 21,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
     }
   ],
   "discrepancies": [
@@ -2398,5 +2473,5 @@
       "details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-08 20:03:54"
+  "last_updated": "2026-09-09 20:07:45"
 }
