@@ -9,11 +9,11 @@
       "entry_price": 418.85,
       "qty": 47,
       "invested": 19685.95,
-      "current_sl": 415.76,
-      "highest_high": 435.3500061035156,
-      "days_held": 1,
-      "last_price": 431.0,
-      "unrealized_pnl_pct": 2.9
+      "current_sl": 416.67,
+      "highest_high": 436.29998779296875,
+      "days_held": 2,
+      "last_price": 432.0,
+      "unrealized_pnl_pct": 3.14
     },
     "ADANIPORTS": {
       "ticker": "ADANIPORTS",
@@ -21,11 +21,11 @@
       "entry_price": 1775.0,
       "qty": 11,
       "invested": 19525.0,
-      "current_sl": 1695.12,
-      "highest_high": 1775.0,
-      "days_held": 0,
-      "last_price": 1775.0,
-      "unrealized_pnl_pct": 0.0
+      "current_sl": 1699.9,
+      "highest_high": 1780.0,
+      "days_held": 1,
+      "last_price": 1768.0,
+      "unrealized_pnl_pct": -0.39
     },
     "ADANIPOWER": {
       "ticker": "ADANIPOWER",
@@ -33,11 +33,11 @@
       "entry_price": 214.9,
       "qty": 93,
       "invested": 19985.7,
-      "current_sl": 205.23,
-      "highest_high": 214.9,
-      "days_held": 0,
-      "last_price": 214.9,
-      "unrealized_pnl_pct": 0.0
+      "current_sl": 205.59,
+      "highest_high": 215.27999877929688,
+      "days_held": 1,
+      "last_price": 213.5,
+      "unrealized_pnl_pct": -0.65
     },
     "CGPOWER": {
       "ticker": "CGPOWER",
@@ -45,11 +45,11 @@
       "entry_price": 926.95,
       "qty": 21,
       "invested": 19465.95,
-      "current_sl": 885.24,
-      "highest_high": 926.95,
-      "days_held": 0,
-      "last_price": 926.95,
-      "unrealized_pnl_pct": 0.0
+      "current_sl": 889.11,
+      "highest_high": 931.0,
+      "days_held": 1,
+      "last_price": 914.55,
+      "unrealized_pnl_pct": -1.34
     }
   },
   "closed_trades": [
@@ -2473,5 +2473,5 @@
       "details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-09 20:07:45"
+  "last_updated": "2026-09-10 19:57:46"
 }
