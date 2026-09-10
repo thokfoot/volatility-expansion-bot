@@ -1,44 +1,8 @@
 {
-  "capital": 2064.8600000000015,
+  "capital": 2012.3200000000013,
   "initial_capital": 10000.0,
-  "invested": 7803.63,
+  "invested": 7749.5599999999995,
   "positions": {
-    "QCOM": {
-      "ticker": "QCOM",
-      "entry_date": "2026-09-09",
-      "entry_price": 174.09,
-      "qty": 11,
-      "invested": 1914.99,
-      "current_sl": 166.26,
-      "highest_high": 174.09,
-      "days_held": 0,
-      "last_price": 174.09,
-      "unrealized_pnl_pct": 0.0
-    },
-    "ORCL": {
-      "ticker": "ORCL",
-      "entry_date": "2026-09-09",
-      "entry_price": 162.52,
-      "qty": 12,
-      "invested": 1950.24,
-      "current_sl": 155.21,
-      "highest_high": 162.52,
-      "days_held": 0,
-      "last_price": 162.52,
-      "unrealized_pnl_pct": 0.0
-    },
-    "QRVO": {
-      "ticker": "QRVO",
-      "entry_date": "2026-09-09",
-      "entry_price": 104.07,
-      "qty": 19,
-      "invested": 1977.33,
-      "current_sl": 99.39,
-      "highest_high": 104.07,
-      "days_held": 0,
-      "last_price": 104.07,
-      "unrealized_pnl_pct": 0.0
-    },
     "META": {
       "ticker": "META",
       "entry_date": "2026-09-10",
@@ -49,6 +13,42 @@
       "highest_high": 653.69,
       "days_held": 0,
       "last_price": 653.69,
+      "unrealized_pnl_pct": 0.0
+    },
+    "QRVO": {
+      "ticker": "QRVO",
+      "entry_date": "2026-09-11",
+      "entry_price": 112.36,
+      "qty": 17,
+      "invested": 1910.12,
+      "current_sl": 107.3,
+      "highest_high": 112.36,
+      "days_held": 0,
+      "last_price": 112.36,
+      "unrealized_pnl_pct": 0.0
+    },
+    "SWKS": {
+      "ticker": "SWKS",
+      "entry_date": "2026-09-11",
+      "entry_price": 84.03,
+      "qty": 23,
+      "invested": 1932.69,
+      "current_sl": 80.25,
+      "highest_high": 84.03,
+      "days_held": 0,
+      "last_price": 84.03,
+      "unrealized_pnl_pct": 0.0
+    },
+    "QCOM": {
+      "ticker": "QCOM",
+      "entry_date": "2026-09-11",
+      "entry_price": 176.88,
+      "qty": 11,
+      "invested": 1945.68,
+      "current_sl": 168.92,
+      "highest_high": 176.88,
+      "days_held": 0,
+      "last_price": 176.88,
       "unrealized_pnl_pct": 0.0
     }
   },
@@ -92,6 +92,48 @@
       "pnl_amount": 39.77,
       "gross_pnl_pct": 2.579,
       "net_pnl_pct": 2.529,
+      "exit_reason": "TRAILING_STOP",
+      "days_held": 1
+    },
+    {
+      "ticker": "QCOM",
+      "entry_date": "2026-09-09",
+      "exit_date": "2026-09-11",
+      "entry_price": 174.09,
+      "exit_price": 172.13,
+      "qty": 11,
+      "invested": 1914.99,
+      "pnl_amount": -22.52,
+      "gross_pnl_pct": -1.126,
+      "net_pnl_pct": -1.176,
+      "exit_reason": "TRAILING_STOP",
+      "days_held": 1
+    },
+    {
+      "ticker": "ORCL",
+      "entry_date": "2026-09-09",
+      "exit_date": "2026-09-11",
+      "entry_price": 162.52,
+      "exit_price": 155.21,
+      "qty": 12,
+      "invested": 1950.24,
+      "pnl_amount": -88.7,
+      "gross_pnl_pct": -4.498,
+      "net_pnl_pct": -4.548,
+      "exit_reason": "HARD_STOP_LOSS",
+      "days_held": 1
+    },
+    {
+      "ticker": "QRVO",
+      "entry_date": "2026-09-09",
+      "exit_date": "2026-09-11",
+      "entry_price": 104.07,
+      "exit_price": 104.36,
+      "qty": 19,
+      "invested": 1977.33,
+      "pnl_amount": 4.61,
+      "gross_pnl_pct": 0.283,
+      "net_pnl_pct": 0.233,
       "exit_reason": "TRAILING_STOP",
       "days_held": 1
     }
@@ -213,6 +255,84 @@
       "Qty": 3,
       "Status": "FILLED",
       "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-11 04:39:18",
+      "Order_ID": "8B10B16FF4",
+      "Ticker": "QCOM",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 172.13,
+      "Fill_Price": 172.13,
+      "Slippage": 0.0,
+      "Qty": 11,
+      "Status": "FILLED",
+      "Note": "TRAILING_STOP"
+    },
+    {
+      "Timestamp": "2026-09-11 04:39:18",
+      "Order_ID": "4AFB31A78F",
+      "Ticker": "ORCL",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 155.21,
+      "Fill_Price": 155.21,
+      "Slippage": 0.0,
+      "Qty": 12,
+      "Status": "FILLED",
+      "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-11 04:39:18",
+      "Order_ID": "7753B8F48D",
+      "Ticker": "QRVO",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 104.36,
+      "Fill_Price": 104.36,
+      "Slippage": 0.0,
+      "Qty": 19,
+      "Status": "FILLED",
+      "Note": "TRAILING_STOP"
+    },
+    {
+      "Timestamp": "2026-09-11 04:39:21",
+      "Order_ID": "2D3CA7BB7B",
+      "Ticker": "QRVO",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 112.36,
+      "Fill_Price": 112.36,
+      "Slippage": 0.0,
+      "Qty": 17,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-11 04:39:21",
+      "Order_ID": "71E174183A",
+      "Ticker": "SWKS",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 84.03,
+      "Fill_Price": 84.03,
+      "Slippage": 0.0,
+      "Qty": 23,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-11 04:39:21",
+      "Order_ID": "F7496823D2",
+      "Ticker": "QCOM",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 176.88,
+      "Fill_Price": 176.88,
+      "Slippage": 0.0,
+      "Qty": 11,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
     }
   ],
   "discrepancies": [
@@ -222,7 +342,21 @@
       "Ticker": "TSLA",
       "Severity": "WARNING",
       "Details": "No bar data available for today 2026-09-04"
+    },
+    {
+      "Timestamp": "2026-09-11 04:39:18",
+      "Category": "GAP_DOWN_SLIP",
+      "Ticker": "QCOM",
+      "Severity": "WARNING",
+      "Details": "Opened at 172.13 below SL of 174.19. Filled at Open."
+    },
+    {
+      "Timestamp": "2026-09-11 04:39:18",
+      "Category": "GAP_DOWN_SLIP",
+      "Ticker": "QRVO",
+      "Severity": "WARNING",
+      "Details": "Opened at 104.36 below SL of 109.14. Filled at Open."
     }
   ],
-  "last_updated": "2026-09-10 04:43:36"
+  "last_updated": "2026-09-11 04:39:23"
 }
