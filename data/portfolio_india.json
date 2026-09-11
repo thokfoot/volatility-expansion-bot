@@ -1,7 +1,7 @@
 {
-  "capital": 120159.32999999997,
+  "capital": 138772.27999999997,
   "initial_capital": 200000.0,
-  "invested": 78662.59999999999,
+  "invested": 59196.65,
   "positions": {
     "COALINDIA": {
       "ticker": "COALINDIA",
@@ -11,9 +11,9 @@
       "invested": 19685.95,
       "current_sl": 416.67,
       "highest_high": 436.29998779296875,
-      "days_held": 2,
-      "last_price": 432.0,
-      "unrealized_pnl_pct": 3.14
+      "days_held": 3,
+      "last_price": 426.4,
+      "unrealized_pnl_pct": 1.8
     },
     "ADANIPORTS": {
       "ticker": "ADANIPORTS",
@@ -23,9 +23,9 @@
       "invested": 19525.0,
       "current_sl": 1699.9,
       "highest_high": 1780.0,
-      "days_held": 1,
-      "last_price": 1768.0,
-      "unrealized_pnl_pct": -0.39
+      "days_held": 2,
+      "last_price": 1764.6,
+      "unrealized_pnl_pct": -0.59
     },
     "ADANIPOWER": {
       "ticker": "ADANIPOWER",
@@ -35,21 +35,9 @@
       "invested": 19985.7,
       "current_sl": 205.59,
       "highest_high": 215.27999877929688,
-      "days_held": 1,
-      "last_price": 213.5,
-      "unrealized_pnl_pct": -0.65
-    },
-    "CGPOWER": {
-      "ticker": "CGPOWER",
-      "entry_date": "2026-09-09",
-      "entry_price": 926.95,
-      "qty": 21,
-      "invested": 19465.95,
-      "current_sl": 889.11,
-      "highest_high": 931.0,
-      "days_held": 1,
-      "last_price": 914.55,
-      "unrealized_pnl_pct": -1.34
+      "days_held": 2,
+      "last_price": 209.97,
+      "unrealized_pnl_pct": -2.29
     }
   },
   "closed_trades": [
@@ -703,6 +691,20 @@
       },
       "invested": 7923.0,
       "pnl_amount": -56.81
+    },
+    {
+      "ticker": "CGPOWER",
+      "entry_date": "2026-09-09",
+      "exit_date": "2026-09-11",
+      "entry_price": 926.95,
+      "exit_price": 889.11,
+      "qty": 21,
+      "invested": 19465.95,
+      "pnl_amount": -853.0,
+      "gross_pnl_pct": -4.082,
+      "net_pnl_pct": -4.382,
+      "exit_reason": "HARD_STOP_LOSS",
+      "days_held": 2
     }
   ],
   "orders": [
@@ -2462,6 +2464,19 @@
       "Qty": 21,
       "Status": "FILLED",
       "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-11 19:57:31",
+      "Order_ID": "0380701553",
+      "Ticker": "CGPOWER",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 889.11,
+      "Fill_Price": 889.11,
+      "Slippage": 0.0,
+      "Qty": 21,
+      "Status": "FILLED",
+      "Note": "HARD_STOP_LOSS"
     }
   ],
   "discrepancies": [
@@ -2473,5 +2488,5 @@
       "details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-10 19:57:46"
+  "last_updated": "2026-09-11 19:57:32"
 }
