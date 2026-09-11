@@ -1,7 +1,7 @@
 {
-  "capital": 2012.3200000000013,
+  "capital": 25.44000000000119,
   "initial_capital": 10000.0,
-  "invested": 7749.5599999999995,
+  "invested": 9736.439999999999,
   "positions": {
     "META": {
       "ticker": "META",
@@ -9,11 +9,11 @@
       "entry_price": 653.69,
       "qty": 3,
       "invested": 1961.07,
-      "current_sl": 624.27,
-      "highest_high": 653.69,
-      "days_held": 0,
-      "last_price": 653.69,
-      "unrealized_pnl_pct": 0.0
+      "current_sl": 634.35,
+      "highest_high": 664.239990234375,
+      "days_held": 1,
+      "last_price": 648.03,
+      "unrealized_pnl_pct": -0.87
     },
     "QRVO": {
       "ticker": "QRVO",
@@ -49,6 +49,18 @@
       "highest_high": 176.88,
       "days_held": 0,
       "last_price": 176.88,
+      "unrealized_pnl_pct": 0.0
+    },
+    "HPQ": {
+      "ticker": "HPQ",
+      "entry_date": "2026-09-12",
+      "entry_price": 35.48,
+      "qty": 56,
+      "invested": 1986.88,
+      "current_sl": 33.88,
+      "highest_high": 35.48,
+      "days_held": 0,
+      "last_price": 35.48,
       "unrealized_pnl_pct": 0.0
     }
   },
@@ -333,6 +345,19 @@
       "Qty": 11,
       "Status": "FILLED",
       "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-12 04:45:33",
+      "Order_ID": "35583981F4",
+      "Ticker": "HPQ",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 35.48,
+      "Fill_Price": 35.48,
+      "Slippage": 0.0,
+      "Qty": 56,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
     }
   ],
   "discrepancies": [
@@ -356,7 +381,14 @@
       "Ticker": "QRVO",
       "Severity": "WARNING",
       "Details": "Opened at 104.36 below SL of 109.14. Filled at Open."
+    },
+    {
+      "Timestamp": "2026-09-12 04:45:33",
+      "Category": "SKIPPED_CAPITAL_EXHAUSTED",
+      "Ticker": "DELL",
+      "Severity": "INFO",
+      "Details": "Qualified breakout on DELL skipped: all slots full or insufficient cash."
     }
   ],
-  "last_updated": "2026-09-11 04:39:23"
+  "last_updated": "2026-09-12 04:45:34"
 }
