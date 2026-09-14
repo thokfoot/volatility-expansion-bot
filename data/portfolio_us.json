@@ -1,7 +1,7 @@
 {
-  "capital": 25.44000000000119,
+  "capital": 1689.800000000002,
   "initial_capital": 10000.0,
-  "invested": 9736.439999999999,
+  "invested": 7841.37,
   "positions": {
     "META": {
       "ticker": "META",
@@ -9,58 +9,46 @@
       "entry_price": 653.69,
       "qty": 3,
       "invested": 1961.07,
-      "current_sl": 634.35,
-      "highest_high": 664.239990234375,
-      "days_held": 1,
-      "last_price": 648.03,
-      "unrealized_pnl_pct": -0.87
+      "current_sl": 638.51,
+      "highest_high": 668.5999755859375,
+      "days_held": 2,
+      "last_price": 665.6,
+      "unrealized_pnl_pct": 1.82
     },
-    "QRVO": {
-      "ticker": "QRVO",
-      "entry_date": "2026-09-11",
-      "entry_price": 112.36,
-      "qty": 17,
-      "invested": 1910.12,
-      "current_sl": 107.3,
-      "highest_high": 112.36,
+    "RBLX": {
+      "ticker": "RBLX",
+      "entry_date": "2026-09-15",
+      "entry_price": 51.29,
+      "qty": 38,
+      "invested": 1949.02,
+      "current_sl": 48.98,
+      "highest_high": 51.29,
       "days_held": 0,
-      "last_price": 112.36,
+      "last_price": 51.29,
       "unrealized_pnl_pct": 0.0
     },
-    "SWKS": {
-      "ticker": "SWKS",
-      "entry_date": "2026-09-11",
-      "entry_price": 84.03,
-      "qty": 23,
-      "invested": 1932.69,
-      "current_sl": 80.25,
-      "highest_high": 84.03,
+    "NET": {
+      "ticker": "NET",
+      "entry_date": "2026-09-15",
+      "entry_price": 330.36,
+      "qty": 6,
+      "invested": 1982.16,
+      "current_sl": 315.49,
+      "highest_high": 330.36,
       "days_held": 0,
-      "last_price": 84.03,
+      "last_price": 330.36,
       "unrealized_pnl_pct": 0.0
     },
-    "QCOM": {
-      "ticker": "QCOM",
-      "entry_date": "2026-09-11",
-      "entry_price": 176.88,
-      "qty": 11,
-      "invested": 1945.68,
-      "current_sl": 168.92,
-      "highest_high": 176.88,
+    "KR": {
+      "ticker": "KR",
+      "entry_date": "2026-09-15",
+      "entry_price": 60.91,
+      "qty": 32,
+      "invested": 1949.12,
+      "current_sl": 58.17,
+      "highest_high": 60.91,
       "days_held": 0,
-      "last_price": 176.88,
-      "unrealized_pnl_pct": 0.0
-    },
-    "HPQ": {
-      "ticker": "HPQ",
-      "entry_date": "2026-09-12",
-      "entry_price": 35.48,
-      "qty": 56,
-      "invested": 1986.88,
-      "current_sl": 33.88,
-      "highest_high": 35.48,
-      "days_held": 0,
-      "last_price": 35.48,
+      "last_price": 60.91,
       "unrealized_pnl_pct": 0.0
     }
   },
@@ -147,6 +135,62 @@
       "gross_pnl_pct": 0.283,
       "net_pnl_pct": 0.233,
       "exit_reason": "TRAILING_STOP",
+      "days_held": 1
+    },
+    {
+      "ticker": "QRVO",
+      "entry_date": "2026-09-11",
+      "exit_date": "2026-09-15",
+      "entry_price": 112.36,
+      "exit_price": 109.86,
+      "qty": 17,
+      "invested": 1910.12,
+      "pnl_amount": -43.46,
+      "gross_pnl_pct": -2.225,
+      "net_pnl_pct": -2.275,
+      "exit_reason": "HARD_STOP_LOSS",
+      "days_held": 1
+    },
+    {
+      "ticker": "SWKS",
+      "entry_date": "2026-09-11",
+      "exit_date": "2026-09-15",
+      "entry_price": 84.03,
+      "exit_price": 82.83,
+      "qty": 23,
+      "invested": 1932.69,
+      "pnl_amount": -28.57,
+      "gross_pnl_pct": -1.428,
+      "net_pnl_pct": -1.478,
+      "exit_reason": "HARD_STOP_LOSS",
+      "days_held": 1
+    },
+    {
+      "ticker": "QCOM",
+      "entry_date": "2026-09-11",
+      "exit_date": "2026-09-15",
+      "entry_price": 176.88,
+      "exit_price": 170.78,
+      "qty": 11,
+      "invested": 1945.68,
+      "pnl_amount": -68.08,
+      "gross_pnl_pct": -3.449,
+      "net_pnl_pct": -3.499,
+      "exit_reason": "HARD_STOP_LOSS",
+      "days_held": 1
+    },
+    {
+      "ticker": "HPQ",
+      "entry_date": "2026-09-12",
+      "exit_date": "2026-09-15",
+      "entry_price": 35.48,
+      "exit_price": 33.88,
+      "qty": 56,
+      "invested": 1986.88,
+      "pnl_amount": -90.6,
+      "gross_pnl_pct": -4.51,
+      "net_pnl_pct": -4.56,
+      "exit_reason": "HARD_STOP_LOSS",
       "days_held": 1
     }
   ],
@@ -358,6 +402,97 @@
       "Qty": 56,
       "Status": "FILLED",
       "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-15 05:22:13",
+      "Order_ID": "E45FCBDB39",
+      "Ticker": "QRVO",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 109.86,
+      "Fill_Price": 109.86,
+      "Slippage": 0.0,
+      "Qty": 17,
+      "Status": "FILLED",
+      "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-15 05:22:13",
+      "Order_ID": "604FB7ED9C",
+      "Ticker": "SWKS",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 82.83,
+      "Fill_Price": 82.83,
+      "Slippage": 0.0,
+      "Qty": 23,
+      "Status": "FILLED",
+      "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-15 05:22:13",
+      "Order_ID": "730513A438",
+      "Ticker": "QCOM",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 170.78,
+      "Fill_Price": 170.78,
+      "Slippage": 0.0,
+      "Qty": 11,
+      "Status": "FILLED",
+      "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-15 05:22:13",
+      "Order_ID": "4499D9983D",
+      "Ticker": "HPQ",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 33.88,
+      "Fill_Price": 33.88,
+      "Slippage": 0.0,
+      "Qty": 56,
+      "Status": "FILLED",
+      "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-15 05:22:15",
+      "Order_ID": "8E490CFBA9",
+      "Ticker": "RBLX",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 51.29,
+      "Fill_Price": 51.29,
+      "Slippage": 0.0,
+      "Qty": 38,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-15 05:22:15",
+      "Order_ID": "74F40E00D0",
+      "Ticker": "NET",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 330.36,
+      "Fill_Price": 330.36,
+      "Slippage": 0.0,
+      "Qty": 6,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-15 05:22:15",
+      "Order_ID": "3FDBF09F5F",
+      "Ticker": "KR",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 60.91,
+      "Fill_Price": 60.91,
+      "Slippage": 0.0,
+      "Qty": 32,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
     }
   ],
   "discrepancies": [
@@ -388,7 +523,21 @@
       "Ticker": "DELL",
       "Severity": "INFO",
       "Details": "Qualified breakout on DELL skipped: all slots full or insufficient cash."
+    },
+    {
+      "Timestamp": "2026-09-15 05:22:13",
+      "Category": "GAP_DOWN_SLIP",
+      "Ticker": "QCOM",
+      "Severity": "WARNING",
+      "Details": "Opened at 170.78 below SL of 173.52. Filled at Open."
+    },
+    {
+      "Timestamp": "2026-09-15 05:22:15",
+      "Category": "SKIPPED_CAPITAL_EXHAUSTED",
+      "Ticker": "IBM",
+      "Severity": "INFO",
+      "Details": "Qualified breakout on IBM skipped: all slots full or insufficient cash."
     }
   ],
-  "last_updated": "2026-09-12 04:45:34"
+  "last_updated": "2026-09-15 05:22:18"
 }
