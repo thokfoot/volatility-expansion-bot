@@ -11,7 +11,7 @@
       "invested": 19685.95,
       "current_sl": 416.67,
       "highest_high": 436.29998779296875,
-      "days_held": 3,
+      "days_held": 4,
       "last_price": 426.4,
       "unrealized_pnl_pct": 1.8
     },
@@ -23,7 +23,7 @@
       "invested": 19525.0,
       "current_sl": 1699.9,
       "highest_high": 1780.0,
-      "days_held": 2,
+      "days_held": 3,
       "last_price": 1764.6,
       "unrealized_pnl_pct": -0.59
     },
@@ -35,7 +35,7 @@
       "invested": 19985.7,
       "current_sl": 205.59,
       "highest_high": 215.27999877929688,
-      "days_held": 2,
+      "days_held": 3,
       "last_price": 209.97,
       "unrealized_pnl_pct": -2.29
     }
@@ -2488,5 +2488,5 @@
       "details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-11 19:57:32"
+  "last_updated": "2026-09-14 21:52:56"
 }
