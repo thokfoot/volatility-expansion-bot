@@ -1,7 +1,7 @@
 {
-  "capital": 138772.27999999997,
+  "capital": 157832.23999999996,
   "initial_capital": 200000.0,
-  "invested": 59196.65,
+  "invested": 39210.95,
   "positions": {
     "COALINDIA": {
       "ticker": "COALINDIA",
@@ -11,9 +11,9 @@
       "invested": 19685.95,
       "current_sl": 416.67,
       "highest_high": 436.29998779296875,
-      "days_held": 4,
-      "last_price": 426.4,
-      "unrealized_pnl_pct": 1.8
+      "days_held": 5,
+      "last_price": 419.25,
+      "unrealized_pnl_pct": 0.1
     },
     "ADANIPORTS": {
       "ticker": "ADANIPORTS",
@@ -21,23 +21,11 @@
       "entry_price": 1775.0,
       "qty": 11,
       "invested": 19525.0,
-      "current_sl": 1699.9,
-      "highest_high": 1780.0,
-      "days_held": 3,
-      "last_price": 1764.6,
-      "unrealized_pnl_pct": -0.59
-    },
-    "ADANIPOWER": {
-      "ticker": "ADANIPOWER",
-      "entry_date": "2026-09-09",
-      "entry_price": 214.9,
-      "qty": 93,
-      "invested": 19985.7,
-      "current_sl": 205.59,
-      "highest_high": 215.27999877929688,
-      "days_held": 3,
-      "last_price": 209.97,
-      "unrealized_pnl_pct": -2.29
+      "current_sl": 1710.79,
+      "highest_high": 1791.4000244140625,
+      "days_held": 4,
+      "last_price": 1713.8,
+      "unrealized_pnl_pct": -3.45
     }
   },
   "closed_trades": [
@@ -705,6 +693,20 @@
       "net_pnl_pct": -4.382,
       "exit_reason": "HARD_STOP_LOSS",
       "days_held": 2
+    },
+    {
+      "ticker": "ADANIPOWER",
+      "entry_date": "2026-09-09",
+      "exit_date": "2026-09-15",
+      "entry_price": 214.9,
+      "exit_price": 205.59,
+      "qty": 93,
+      "invested": 19985.7,
+      "pnl_amount": -925.74,
+      "gross_pnl_pct": -4.332,
+      "net_pnl_pct": -4.632,
+      "exit_reason": "HARD_STOP_LOSS",
+      "days_held": 4
     }
   ],
   "orders": [
@@ -2477,6 +2479,19 @@
       "Qty": 21,
       "Status": "FILLED",
       "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-15 20:31:29",
+      "Order_ID": "3BD88DF392",
+      "Ticker": "ADANIPOWER",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 205.59,
+      "Fill_Price": 205.59,
+      "Slippage": 0.0,
+      "Qty": 93,
+      "Status": "FILLED",
+      "Note": "HARD_STOP_LOSS"
     }
   ],
   "discrepancies": [
@@ -2488,5 +2503,5 @@
       "details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-14 21:52:56"
+  "last_updated": "2026-09-15 20:31:29"
 }
