@@ -1,7 +1,7 @@
 {
-  "capital": 1689.800000000002,
+  "capital": 3550.060000000002,
   "initial_capital": 10000.0,
-  "invested": 7841.37,
+  "invested": 5892.35,
   "positions": {
     "META": {
       "ticker": "META",
@@ -9,23 +9,11 @@
       "entry_price": 653.69,
       "qty": 3,
       "invested": 1961.07,
-      "current_sl": 648.32,
-      "highest_high": 678.8699951171875,
-      "days_held": 3,
-      "last_price": 670.24,
-      "unrealized_pnl_pct": 2.53
-    },
-    "RBLX": {
-      "ticker": "RBLX",
-      "entry_date": "2026-09-15",
-      "entry_price": 51.29,
-      "qty": 38,
-      "invested": 1949.02,
-      "current_sl": 48.98,
-      "highest_high": 51.29,
-      "days_held": 0,
-      "last_price": 51.29,
-      "unrealized_pnl_pct": 0.0
+      "current_sl": 654.47,
+      "highest_high": 685.3099975585938,
+      "days_held": 4,
+      "last_price": 673.31,
+      "unrealized_pnl_pct": 3.0
     },
     "NET": {
       "ticker": "NET",
@@ -33,11 +21,11 @@
       "entry_price": 330.36,
       "qty": 6,
       "invested": 1982.16,
-      "current_sl": 315.49,
-      "highest_high": 330.36,
-      "days_held": 0,
-      "last_price": 330.36,
-      "unrealized_pnl_pct": 0.0
+      "current_sl": 319.51,
+      "highest_high": 334.57000732421875,
+      "days_held": 1,
+      "last_price": 324.65,
+      "unrealized_pnl_pct": -1.73
     },
     "KR": {
       "ticker": "KR",
@@ -45,11 +33,11 @@
       "entry_price": 60.91,
       "qty": 32,
       "invested": 1949.12,
-      "current_sl": 58.17,
-      "highest_high": 60.91,
-      "days_held": 0,
-      "last_price": 60.91,
-      "unrealized_pnl_pct": 0.0
+      "current_sl": 59.62,
+      "highest_high": 62.43000030517578,
+      "days_held": 1,
+      "last_price": 61.14,
+      "unrealized_pnl_pct": 0.38
     }
   },
   "closed_trades": [
@@ -190,6 +178,20 @@
       "pnl_amount": -90.6,
       "gross_pnl_pct": -4.51,
       "net_pnl_pct": -4.56,
+      "exit_reason": "HARD_STOP_LOSS",
+      "days_held": 1
+    },
+    {
+      "ticker": "RBLX",
+      "entry_date": "2026-09-15",
+      "exit_date": "2026-09-17",
+      "entry_price": 51.29,
+      "exit_price": 48.98,
+      "qty": 38,
+      "invested": 1949.02,
+      "pnl_amount": -88.76,
+      "gross_pnl_pct": -4.504,
+      "net_pnl_pct": -4.554,
       "exit_reason": "HARD_STOP_LOSS",
       "days_held": 1
     }
@@ -493,6 +495,19 @@
       "Qty": 32,
       "Status": "FILLED",
       "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-17 05:09:07",
+      "Order_ID": "761A03D483",
+      "Ticker": "RBLX",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 48.98,
+      "Fill_Price": 48.98,
+      "Slippage": 0.0,
+      "Qty": 38,
+      "Status": "FILLED",
+      "Note": "HARD_STOP_LOSS"
     }
   ],
   "discrepancies": [
@@ -567,5 +582,5 @@
       "Details": "Qualified breakout on FFIV skipped: all slots full or insufficient cash."
     }
   ],
-  "last_updated": "2026-09-16 05:01:30"
+  "last_updated": "2026-09-17 05:09:08"
 }
