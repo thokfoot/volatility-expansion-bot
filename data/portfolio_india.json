@@ -1,21 +1,8 @@
 {
-  "capital": 176592.44999999995,
+  "capital": 196116.97999999995,
   "initial_capital": 200000.0,
-  "invested": 19685.95,
-  "positions": {
-    "COALINDIA": {
-      "ticker": "COALINDIA",
-      "entry_date": "2026-09-08",
-      "entry_price": 418.85,
-      "qty": 47,
-      "invested": 19685.95,
-      "current_sl": 416.67,
-      "highest_high": 436.29998779296875,
-      "days_held": 6,
-      "last_price": 422.25,
-      "unrealized_pnl_pct": 0.81
-    }
-  },
+  "invested": 0.0,
+  "positions": {},
   "closed_trades": [
     {
       "ticker": "HSCL",
@@ -709,6 +696,20 @@
       "net_pnl_pct": -3.917,
       "exit_reason": "HARD_STOP_LOSS",
       "days_held": 5
+    },
+    {
+      "ticker": "COALINDIA",
+      "entry_date": "2026-09-08",
+      "exit_date": "2026-09-17",
+      "entry_price": 418.85,
+      "exit_price": 416.67,
+      "qty": 47,
+      "invested": 19685.95,
+      "pnl_amount": -161.42,
+      "gross_pnl_pct": -0.52,
+      "net_pnl_pct": -0.82,
+      "exit_reason": "HARD_STOP_LOSS",
+      "days_held": 7
     }
   ],
   "orders": [
@@ -2507,6 +2508,19 @@
       "Qty": 11,
       "Status": "FILLED",
       "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-17 20:31:27",
+      "Order_ID": "EDF9249AD8",
+      "Ticker": "COALINDIA",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 416.67,
+      "Fill_Price": 416.67,
+      "Slippage": 0.0,
+      "Qty": 47,
+      "Status": "FILLED",
+      "Note": "HARD_STOP_LOSS"
     }
   ],
   "discrepancies": [
@@ -2518,5 +2532,5 @@
       "details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-16 20:29:38"
+  "last_updated": "2026-09-17 20:31:28"
 }
