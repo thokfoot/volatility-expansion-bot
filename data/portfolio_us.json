@@ -1,7 +1,7 @@
 {
-  "capital": 3550.060000000002,
+  "capital": 1878.9500000000025,
   "initial_capital": 10000.0,
-  "invested": 5892.35,
+  "invested": 7503.860000000001,
   "positions": {
     "META": {
       "ticker": "META",
@@ -11,21 +11,9 @@
       "invested": 1961.07,
       "current_sl": 654.47,
       "highest_high": 685.3099975585938,
-      "days_held": 4,
-      "last_price": 673.31,
-      "unrealized_pnl_pct": 3.0
-    },
-    "NET": {
-      "ticker": "NET",
-      "entry_date": "2026-09-15",
-      "entry_price": 330.36,
-      "qty": 6,
-      "invested": 1982.16,
-      "current_sl": 319.51,
-      "highest_high": 334.57000732421875,
-      "days_held": 1,
-      "last_price": 324.65,
-      "unrealized_pnl_pct": -1.73
+      "days_held": 5,
+      "last_price": 682.31,
+      "unrealized_pnl_pct": 4.38
     },
     "KR": {
       "ticker": "KR",
@@ -35,9 +23,33 @@
       "invested": 1949.12,
       "current_sl": 59.62,
       "highest_high": 62.43000030517578,
-      "days_held": 1,
-      "last_price": 61.14,
-      "unrealized_pnl_pct": 0.38
+      "days_held": 2,
+      "last_price": 60.75,
+      "unrealized_pnl_pct": -0.26
+    },
+    "INTC": {
+      "ticker": "INTC",
+      "entry_date": "2026-09-18",
+      "entry_price": 108.8,
+      "qty": 18,
+      "invested": 1958.4,
+      "current_sl": 103.9,
+      "highest_high": 108.8,
+      "days_held": 0,
+      "last_price": 108.8,
+      "unrealized_pnl_pct": 0.0
+    },
+    "AMD": {
+      "ticker": "AMD",
+      "entry_date": "2026-09-18",
+      "entry_price": 545.09,
+      "qty": 3,
+      "invested": 1635.27,
+      "current_sl": 520.56,
+      "highest_high": 545.09,
+      "days_held": 0,
+      "last_price": 545.09,
+      "unrealized_pnl_pct": 0.0
     }
   },
   "closed_trades": [
@@ -194,6 +206,20 @@
       "net_pnl_pct": -4.554,
       "exit_reason": "HARD_STOP_LOSS",
       "days_held": 1
+    },
+    {
+      "ticker": "NET",
+      "entry_date": "2026-09-15",
+      "exit_date": "2026-09-18",
+      "entry_price": 330.36,
+      "exit_price": 320.59,
+      "qty": 6,
+      "invested": 1982.16,
+      "pnl_amount": -59.6,
+      "gross_pnl_pct": -2.957,
+      "net_pnl_pct": -3.007,
+      "exit_reason": "HARD_STOP_LOSS",
+      "days_held": 2
     }
   ],
   "orders": [
@@ -508,6 +534,45 @@
       "Qty": 38,
       "Status": "FILLED",
       "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-18 05:03:24",
+      "Order_ID": "CCF554123E",
+      "Ticker": "NET",
+      "Side": "SELL",
+      "Type": "MARKET",
+      "Expected_Price": 320.59,
+      "Fill_Price": 320.59,
+      "Slippage": 0.0,
+      "Qty": 6,
+      "Status": "FILLED",
+      "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-18 05:03:25",
+      "Order_ID": "F998BD0CAB",
+      "Ticker": "INTC",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 108.8,
+      "Fill_Price": 108.8,
+      "Slippage": 0.0,
+      "Qty": 18,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
+    },
+    {
+      "Timestamp": "2026-09-18 05:03:25",
+      "Order_ID": "E05E9B1D02",
+      "Ticker": "AMD",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 545.09,
+      "Fill_Price": 545.09,
+      "Slippage": 0.0,
+      "Qty": 3,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
     }
   ],
   "discrepancies": [
@@ -580,7 +645,14 @@
       "Ticker": "FFIV",
       "Severity": "INFO",
       "Details": "Qualified breakout on FFIV skipped: all slots full or insufficient cash."
+    },
+    {
+      "Timestamp": "2026-09-18 05:03:24",
+      "Category": "GAP_DOWN_SLIP",
+      "Ticker": "NET",
+      "Severity": "WARNING",
+      "Details": "Opened at 320.59 below SL of 321.74. Filled at Open."
     }
   ],
-  "last_updated": "2026-09-17 05:09:08"
+  "last_updated": "2026-09-18 05:03:26"
 }
