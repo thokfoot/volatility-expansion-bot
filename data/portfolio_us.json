@@ -9,11 +9,11 @@
       "entry_price": 653.69,
       "qty": 3,
       "invested": 1961.07,
-      "current_sl": 654.47,
-      "highest_high": 685.3099975585938,
-      "days_held": 5,
-      "last_price": 682.31,
-      "unrealized_pnl_pct": 4.38
+      "current_sl": 659.09,
+      "highest_high": 690.1500244140625,
+      "days_held": 6,
+      "last_price": 665.75,
+      "unrealized_pnl_pct": 1.84
     },
     "KR": {
       "ticker": "KR",
@@ -23,9 +23,9 @@
       "invested": 1949.12,
       "current_sl": 59.62,
       "highest_high": 62.43000030517578,
-      "days_held": 2,
-      "last_price": 60.75,
-      "unrealized_pnl_pct": -0.26
+      "days_held": 3,
+      "last_price": 60.0,
+      "unrealized_pnl_pct": -1.49
     },
     "INTC": {
       "ticker": "INTC",
@@ -654,5 +654,5 @@
       "Details": "Opened at 320.59 below SL of 321.74. Filled at Open."
     }
   ],
-  "last_updated": "2026-09-18 05:03:26"
+  "last_updated": "2026-09-19 04:47:14"
 }
