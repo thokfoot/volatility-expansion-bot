@@ -1,8 +1,21 @@
 {
-  "capital": 196116.97999999995,
+  "capital": 177876.97999999995,
   "initial_capital": 200000.0,
-  "invested": 0.0,
-  "positions": {},
+  "invested": 18240.0,
+  "positions": {
+    "ADANIPORTS": {
+      "ticker": "ADANIPORTS",
+      "entry_date": "2026-09-18",
+      "entry_price": 1824.0,
+      "qty": 10,
+      "invested": 18240.0,
+      "current_sl": 1741.92,
+      "highest_high": 1824.0,
+      "days_held": 0,
+      "last_price": 1824.0,
+      "unrealized_pnl_pct": 0.0
+    }
+  },
   "closed_trades": [
     {
       "ticker": "HSCL",
@@ -2521,6 +2534,19 @@
       "Qty": 47,
       "Status": "FILLED",
       "Note": "HARD_STOP_LOSS"
+    },
+    {
+      "Timestamp": "2026-09-18 20:02:11",
+      "Order_ID": "D0431998D6",
+      "Ticker": "ADANIPORTS",
+      "Side": "BUY",
+      "Type": "MARKET",
+      "Expected_Price": 1824.0,
+      "Fill_Price": 1824.0,
+      "Slippage": 0.0,
+      "Qty": 10,
+      "Status": "FILLED",
+      "Note": "Entry Breakout"
     }
   ],
   "discrepancies": [
@@ -2532,5 +2558,5 @@
       "details": "No bar data available for today 2026-09-04"
     }
   ],
-  "last_updated": "2026-09-17 20:31:28"
+  "last_updated": "2026-09-18 20:02:12"
 }
